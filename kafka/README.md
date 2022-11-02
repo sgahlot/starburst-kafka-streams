@@ -29,10 +29,10 @@ rhoas kafka describe --name ${KAFKA_NAME}
 
 # Populating Kafka with instances
 Run the Quarkus application to connect to the cluster and create one instance of random `Person` with this attributes every 5":
-```json
+```bash
 Person [name=Michele_Tessa, genre=F, age=62]
 ```
-s
+
 ```bash
 ./startLoader.sh 
 ```
