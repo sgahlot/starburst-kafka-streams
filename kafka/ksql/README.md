@@ -121,6 +121,16 @@ SELECT count(*) as persons_by_genre, genre from QUERYABLE_PERSONS_TABLE GROUP BY
 **TODO**: empty queries
 
 ### List of topics
+List of topics at the begin of the exercise (after the `ksql-server` started):
+```bash
+rhoas kafka topic list
+  NAME                                          PARTITIONS   RETENTION TIME (MS)   RETENTION SIZE (BYTES)  
+ --------------------------------------------- ------------ --------------------- ------------------------ 
+  _confluent-ksql-ksql-service-_command_topic            1   -1 (Unlimited)        -1 (Unlimited)          
+  ksql-service-ksql_processing_log                       1   604800000             -1 (Unlimited)          
+  persons                                                1   604800000             -1 (Unlimited) 
+```
+
 Notice the list of topics at the end of the exercise:
 ```bash
 > rhoas kafka topic list
