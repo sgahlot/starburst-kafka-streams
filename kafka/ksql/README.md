@@ -123,7 +123,7 @@ SELECT count(*) as persons_by_genre, genre from QUERYABLE_PERSONS_TABLE GROUP BY
 ### List of topics
 List of topics at the begin of the exercise (after the `ksql-server` started):
 ```bash
-rhoas kafka topic list
+> rhoas kafka topic list
   NAME                                          PARTITIONS   RETENTION TIME (MS)   RETENTION SIZE (BYTES)  
  --------------------------------------------- ------------ --------------------- ------------------------ 
   _confluent-ksql-ksql-service-_command_topic            1   -1 (Unlimited)        -1 (Unlimited)          
