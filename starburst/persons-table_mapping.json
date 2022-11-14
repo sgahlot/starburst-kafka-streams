@@ -1,0 +1,25 @@
+{
+    "tableName": "persons",
+    "schemaName": "default",
+    "topicName": "persons",
+    "message": {
+        "dataFormat": "json",
+        "fields": [
+            {
+                "name": "name",
+                "mapping": "name",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "genre",
+                "mapping": "genre",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "age",
+                "mapping": "age",
+                "type": "BIGINT"
+            }
+        ]
+    }
+}

@@ -7,10 +7,12 @@
 * `quarkus CLI`
 
 Get token and login to RHOAS instance (e.g. qaprodauth.console.redhat.com):
-* Get token from [https://qaprodauth.console.redhat.com/openshift/token/show](https://qaprodauth.console.redhat.com/openshift/token/show)
+* One can get token from one of the following:
+  * Staging: [qaprodauth.console.redhat.com](https://qaprodauth.console.redhat.com/openshift/token/show)
+  * Prod: [console.redhat.com](https://console.redhat.com/openshift/token/show)
 * Run `rhoas login --api-gateway https://api.stage.openshift.com -t "<THE TOKEN>`
 
-Note: replace `api.stage.openshift.com` with proper API server URL.
+Note: replace `api.stage.openshift.com` with proper API server URL. _For Prod, use `api.openshift.com`_
 
 # Creating Kafka instance
 Default settings are given in [.env](./.env) file.
@@ -22,9 +24,7 @@ Run this to create the Kafka instance, wait until it is ready and then create th
 
 Run this to check the status:
 ```
-source .env
-rhoas status
-rhoas kafka describe --name ${KAFKA_NAME}
+./checkKafkaStatus.sh
 ```
 
 # Populating Kafka with instances

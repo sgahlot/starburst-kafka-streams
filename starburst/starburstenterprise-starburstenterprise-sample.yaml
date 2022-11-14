@@ -1,0 +1,1093 @@
+﻿apiVersion: charts.starburstdata.com/v1alpha1
+kind: StarburstEnterprise
+metadata:
+  creationTimestamp: '2022-11-01T15:01:49Z'
+  finalizers:
+    - helm.sdk.operatorframework.io/uninstall-release
+  generation: 21
+  managedFields:
+    - apiVersion: charts.starburstdata.com/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:finalizers':
+            .: {}
+            'v:"helm.sdk.operatorframework.io/uninstall-release"': {}
+      manager: helm-operator
+      operation: Update
+      time: '2022-11-01T15:01:55Z'
+    - apiVersion: charts.starburstdata.com/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          .: {}
+          'f:conditions': {}
+          'f:deployedRelease':
+            .: {}
+            'f:manifest': {}
+            'f:name': {}
+      manager: helm-operator
+      operation: Update
+      subresource: status
+      time: '2022-11-01T15:01:56Z'
+    - apiVersion: charts.starburstdata.com/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:initFile': {}
+          'f:externalSecrets':
+            .: {}
+            'f:enabled': {}
+            'f:goDaddy':
+              .: {}
+              'f:backendType': {}
+            'f:secretPrefix': {}
+            'f:type': {}
+          'f:image':
+            .: {}
+            'f:pullPolicy': {}
+            'f:repository': {}
+            'f:tag': {}
+          'f:sharedSecret': {}
+          'f:spilling':
+            .: {}
+            'f:enabled': {}
+            'f:volume':
+              .: {}
+              'f:emptyDir': {}
+          'f:internalTls': {}
+          'f:registryCredentials':
+            .: {}
+            'f:enabled': {}
+            'f:password': {}
+            'f:registry': {}
+            'f:username': {}
+          'f:extraSecret':
+            .: {}
+            'f:file': {}
+            'f:name': {}
+          'f:catalogs':
+            .: {}
+            'f:kafka': {}
+            'f:tpch': {}
+          .: {}
+          'f:cache':
+            .: {}
+            'f:diskUsagePercentage': {}
+            'f:enabled': {}
+            'f:ttl': {}
+            'f:volume':
+              .: {}
+              'f:emptyDir': {}
+          'f:starburst-charts-common':
+            .: {}
+            'f:global': {}
+          'f:internal':
+            .: {}
+            'f:ports':
+              .: {}
+              'f:http':
+                .: {}
+                'f:port': {}
+              'f:https':
+                .: {}
+                'f:port': {}
+          'f:worker':
+            'f:envFrom': {}
+            'f:autoscaling':
+              .: {}
+              'f:enabled': {}
+              'f:maxReplicas': {}
+              'f:minReplicas': {}
+              'f:targetCPUUtilizationPercentage': {}
+            'f:tolerations': {}
+            'f:priorityClassName': {}
+            'f:deploymentAnnotations': {}
+            .: {}
+            'f:additionalProperties': {}
+            'f:replicas': {}
+            'f:resources':
+              .: {}
+              'f:limits':
+                .: {}
+                'f:cpu': {}
+              'f:memory': {}
+              'f:requests':
+                .: {}
+                'f:cpu': {}
+            'f:deploymentTerminationGracePeriodSeconds': {}
+            'f:nodeMemoryHeadroom': {}
+            'f:podAnnotations': {}
+            'f:starburstWorkerShutdownGracePeriodSeconds': {}
+            'f:heapHeadroomPercentage': {}
+            'f:nodeSelector': {}
+            'f:etcFiles':
+              .: {}
+              'f:jvm.config': {}
+              'f:other': {}
+              'f:properties':
+                .: {}
+                'f:config.properties': {}
+                'f:log.properties': {}
+                'f:node.properties': {}
+            'f:heapSizePercentage': {}
+            'f:affinity': {}
+          'f:query':
+            .: {}
+            'f:maxConcurrentQueries': {}
+          'f:starburstPlatformLicense': {}
+          'f:usageMetrics':
+            .: {}
+            'f:enabled': {}
+            'f:reporter':
+              .: {}
+              'f:configFiles':
+                .: {}
+                'f:config.json': {}
+              'f:enabled': {}
+              'f:image':
+                .: {}
+                'f:pullPolicy': {}
+                'f:repository': {}
+                'f:tag': {}
+            'f:usageClient':
+              .: {}
+              'f:initialDelay': {}
+              'f:interval': {}
+          'f:initImage':
+            .: {}
+            'f:pullPolicy': {}
+            'f:repository': {}
+            'f:tag': {}
+          'f:imagePullSecrets': {}
+          'f:expose':
+            .: {}
+            'f:clusterIp':
+              .: {}
+              'f:name': {}
+              'f:ports':
+                .: {}
+                'f:http':
+                  .: {}
+                  'f:port': {}
+            'f:ingress':
+              'f:ingressClassName': {}
+              'f:servicePort': {}
+              'f:tls':
+                .: {}
+                'f:enabled': {}
+                'f:secretName': {}
+              'f:ingressName': {}
+              'f:serviceName': {}
+              .: {}
+              'f:annotations': {}
+              'f:path': {}
+              'f:host': {}
+            'f:loadBalancer':
+              .: {}
+              'f:IP': {}
+              'f:annotations': {}
+              'f:name': {}
+              'f:ports':
+                .: {}
+                'f:http':
+                  .: {}
+                  'f:port': {}
+              'f:sourceRanges': {}
+            'f:nodePort':
+              .: {}
+              'f:extraLabels': {}
+              'f:name': {}
+              'f:ports':
+                .: {}
+                'f:http':
+                  .: {}
+                  'f:nodePort': {}
+                  'f:port': {}
+            'f:type': {}
+          'f:livenessProbe': {}
+          'f:extraArguments': {}
+          'f:userDatabase':
+            .: {}
+            'f:enabled': {}
+            'f:users': {}
+          'f:readinessProbe': {}
+          'f:securityContext': {}
+          'f:coordinator':
+            'f:envFrom': {}
+            'f:tolerations': {}
+            'f:priorityClassName': {}
+            'f:deploymentAnnotations': {}
+            .: {}
+            'f:additionalProperties': {}
+            'f:resources':
+              .: {}
+              'f:limits':
+                .: {}
+                'f:cpu': {}
+              'f:memory': {}
+              'f:requests':
+                .: {}
+                'f:cpu': {}
+            'f:nodeMemoryHeadroom': {}
+            'f:podAnnotations': {}
+            'f:heapHeadroomPercentage': {}
+            'f:nodeSelector': {}
+            'f:etcFiles':
+              .: {}
+              'f:jvm.config': {}
+              'f:other': {}
+              'f:properties':
+                .: {}
+                'f:config.properties': {}
+                'f:log.properties': {}
+                'f:node.properties': {}
+            'f:heapSizePercentage': {}
+            'f:affinity': {}
+          'f:additionalVolumes': {}
+          'f:commonLabels': {}
+          'f:prometheus':
+            .: {}
+            'f:agent':
+              .: {}
+              'f:config': {}
+              'f:port': {}
+              'f:version': {}
+            'f:enabled': {}
+            'f:rules': {}
+          'f:environment': {}
+      manager: Mozilla
+      operation: Update
+      time: '2022-11-03T14:52:27Z'
+  name: starburstenterprise-sample
+  namespace: redhat-starburst-operator
+  resourceVersion: '3331893'
+  uid: 868b17d8-4cd0-41b7-b9e9-305413538582
+spec:
+  starburstPlatformLicense: starburstdata
+  extraSecret:
+    file: null
+    name: null
+  cache:
+    diskUsagePercentage: 80
+    enabled: false
+    ttl: 7d
+    volume:
+      emptyDir: {}
+  usageMetrics:
+    enabled: true
+    reporter:
+      configFiles:
+        config.json: ''
+      enabled: false
+      image:
+        pullPolicy: IfNotPresent
+        repository: harbor.starburstdata.net/testing/usage-metrics-reporter
+        tag: 0.1.3-alpha
+    usageClient:
+      initialDelay: 1m
+      interval: 1m
+  imagePullSecrets: null
+  starburst-charts-common:
+    global: {}
+  expose:
+    clusterIp:
+      name: starburst
+      ports:
+        http:
+          port: 8080
+    ingress:
+      annotations: {}
+      host: null
+      ingressClassName: null
+      ingressName: coordinator-ingress
+      path: /
+      serviceName: starburst
+      servicePort: 8080
+      tls:
+        enabled: true
+        secretName: null
+    loadBalancer:
+      IP: ''
+      annotations: {}
+      name: starburst
+      ports:
+        http:
+          port: 8080
+      sourceRanges: []
+    nodePort:
+      extraLabels: {}
+      name: starburst
+      ports:
+        http:
+          nodePort: 30080
+          port: 8080
+    type: clusterIp
+  userDatabase:
+    enabled: false
+    users:
+      - password: 46991b33f7a75ff79213c0dc0e610610
+        username: admin
+  extraArguments: []
+  readinessProbe: null
+  query:
+    maxConcurrentQueries: 3
+  prometheus:
+    agent:
+      config: /etc/starburst/telemetry/prometheus.yaml
+      port: 8081
+      version: 0.15.0
+    enabled: true
+    rules:
+      - attrNameSnakeCase: true
+        name: $1
+        pattern: trino.execution<name=QueryManager><>(running_queries|queued_queries)
+        type: GAUGE
+      - name: failed_queries
+        pattern: trino.execution<name=QueryManager><>FailedQueries\.TotalCount
+        type: COUNTER
+  commonLabels: {}
+  initImage:
+    pullPolicy: IfNotPresent
+    repository: registry.connect.redhat.com/starburst/starburst-enterprise-init
+    tag: 360.6.1-ubi
+  initFile: ''
+  livenessProbe: null
+  securityContext: {}
+  coordinator:
+    nodeSelector: {}
+    heapHeadroomPercentage: 30
+    etcFiles:
+      jvm.config: |
+        -server
+        -XX:-UseBiasedLocking
+        -XX:+UseG1GC
+        -XX:G1HeapRegionSize=32M
+        -XX:+ExplicitGCInvokesConcurrent
+        -XX:+ExitOnOutOfMemoryError
+        -XX:+HeapDumpOnOutOfMemoryError
+        -XX:-OmitStackTraceInFastThrow
+        -XX:ReservedCodeCacheSize=512M
+        -XX:PerMethodRecompilationCutoff=10000
+        -XX:PerBytecodeRecompilationCutoff=10000
+        -Djdk.nio.maxCachedBufferSize=2000000
+        -Djdk.attach.allowAttachSelf=true
+      other: {}
+      properties:
+        config.properties: |
+          coordinator=true
+          node-scheduler.include-coordinator=false
+          http-server.http.port=8080
+          discovery.uri=http://localhost:8080
+          discovery-server.enabled=true
+        log.properties: |
+          # Enable verbose logging from Starburst Enterprise
+          #io.trino=DEBUG
+          #com.starburstdata.presto=DEBUG
+        node.properties: |
+          node.environment={{ include "starburst.environment" . }}
+          node.data-dir=/data/starburst
+          plugin.dir=/usr/lib/starburst/plugin
+          node.server-log-file=/var/log/starburst/server.log
+          node.launcher-log-file=/var/log/starburst/launcher.log
+    resources:
+      limits:
+        cpu: 4
+      memory: 8Gi
+      requests:
+        cpu: 4
+    heapSizePercentage: 90
+    affinity: {}
+    envFrom: []
+    additionalProperties: ''
+    tolerations: []
+    nodeMemoryHeadroom: 2Gi
+    priorityClassName: null
+    deploymentAnnotations: {}
+    podAnnotations: {}
+  additionalVolumes: []
+  environment: null
+  sharedSecret: null
+  spilling:
+    enabled: false
+    volume:
+      emptyDir: {}
+  externalSecrets:
+    enabled: false
+    goDaddy:
+      backendType: secretsManager
+    secretPrefix: external0
+    type: goDaddy
+  catalogs:
+    kafka: >
+      connector.name=kafka
+
+      kafka.table-names=persons
+
+      kafka.security-protocol=SASL_SSL
+
+      kafka.authentication.type=OAUTH2
+
+      kafka.hide-internal-columns=false
+
+      kafka.authentication.token-url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+
+      kafka.authentication.client-id=<PROVIDE_CLIENT_ID>
+
+      kafka.authentication.client-secret=<PROVIDE_CLIENT_SECRET>
+
+      kafka.nodes=<PROVIDE_NODES>
+    tpch: |-
+      connector.name=tpch
+      tpch.splits-per-node=4
+  image:
+    pullPolicy: IfNotPresent
+    repository: registry.connect.redhat.com/starburst/starburst-enterprise
+    tag: 360-e.6-ubi
+  internal:
+    ports:
+      http:
+        port: 8080
+      https:
+        port: 8443
+  internalTls: false
+  worker:
+    nodeSelector: {}
+    heapHeadroomPercentage: 30
+    etcFiles:
+      jvm.config: |
+        -server
+        -XX:-UseBiasedLocking
+        -XX:+UseG1GC
+        -XX:G1HeapRegionSize=32M
+        -XX:+ExplicitGCInvokesConcurrent
+        -XX:+ExitOnOutOfMemoryError
+        -XX:+HeapDumpOnOutOfMemoryError
+        -XX:-OmitStackTraceInFastThrow
+        -XX:ReservedCodeCacheSize=512M
+        -XX:PerMethodRecompilationCutoff=10000
+        -XX:PerBytecodeRecompilationCutoff=10000
+        -Djdk.nio.maxCachedBufferSize=2000000
+        -Djdk.attach.allowAttachSelf=true
+      other: {}
+      properties:
+        config.properties: |
+          coordinator=false
+          http-server.http.port=8080
+          discovery.uri=http://coordinator:8080
+        log.properties: |
+          # Enable verbose logging from Starburst Enterprise
+          #io.trino=DEBUG
+          #com.starburstdata.presto=DEBUG
+        node.properties: |
+          node.environment={{ include "starburst.environment" . }}
+          node.data-dir=/data/starburst
+          plugin.dir=/usr/lib/starburst/plugin
+          node.server-log-file=/var/log/starburst/server.log
+          node.launcher-log-file=/var/log/starburst/launcher.log
+    deploymentTerminationGracePeriodSeconds: 300
+    resources:
+      limits:
+        cpu: 4
+      memory: 8Gi
+      requests:
+        cpu: 4
+    heapSizePercentage: 90
+    affinity: {}
+    starburstWorkerShutdownGracePeriodSeconds: 120
+    envFrom: []
+    autoscaling:
+      enabled: false
+      maxReplicas: 100
+      minReplicas: 1
+      targetCPUUtilizationPercentage: 80
+    additionalProperties: ''
+    replicas: 2
+    tolerations: []
+    nodeMemoryHeadroom: 2Gi
+    priorityClassName: null
+    deploymentAnnotations: {}
+    podAnnotations: {}
+  registryCredentials:
+    enabled: false
+    password: null
+    registry: registry.connect.redhat.com
+    username: null
+status:
+  conditions:
+    - lastTransitionTime: '2022-11-01T15:01:49Z'
+      status: 'True'
+      type: Initialized
+    - lastTransitionTime: '2022-11-01T15:01:56Z'
+      reason: UpgradeSuccessful
+      status: 'True'
+      type: Deployed
+  deployedRelease:
+    manifest: >
+      ---
+
+      # Source: starburst-enterprise/templates/configuration/secret.yaml
+
+      #
+      ------------------------------------------------------------------------------
+
+      # Coordinator Configuration
+
+      #
+      ------------------------------------------------------------------------------
+
+      apiVersion: v1
+
+      kind: Secret
+
+      metadata:
+        name: values-yaml-secret
+        labels:
+          name: values-yaml-secret
+      data:
+        values.yaml: YWRkaXRpb25hbFZvbHVtZXM6IFtdCmNhY2hlOgogIGRpc2tVc2FnZVBlcmNlbnRhZ2U6IDgwCiAgZW5hYmxlZDogZmFsc2UKICB0dGw6IDdkCiAgdm9sdW1lOgogICAgZW1wdHlEaXI6IHt9CmNhdGFsb2dzOgogIGthZmthOiB8CiAgICBjb25uZWN0b3IubmFtZT1rYWZrYQogICAga2Fma2EudGFibGUtbmFtZXM9cGVyc29ucwogICAga2Fma2Eubm9kZXM9c3RhcmJ1cnN0LWNkaS1iYi1mdGItLWotdS0taC1nLmJmMi5rYWZrYS5yaGNsb3VkLmNvbTo0NDMKICAgIGthZmthLnNlY3VyaXR5LXByb3RvY29sPVNBU0xfU1NMCiAgICBrYWZrYS5hdXRoZW50aWNhdGlvbi50eXBlPU9BVVRIMgogICAga2Fma2EuaGlkZS1pbnRlcm5hbC1jb2x1bW5zPWZhbHNlCiAgICBrYWZrYS5hdXRoZW50aWNhdGlvbi50b2tlbi11cmw9aHR0cHM6Ly9zc28ucmVkaGF0LmNvbS9hdXRoL3JlYWxtcy9yZWRoYXQtZXh0ZXJuYWwvcHJvdG9jb2wvb3BlbmlkLWNvbm5lY3QvdG9rZW4KICAgIGthZmthLmF1dGhlbnRpY2F0aW9uLmNsaWVudC1pZD1jMGU0ZDY3MC04YzcyLTRmMTgtYjQ2Zi1mM2FiNzhhZTY2MTkKICAgIGthZmthLmF1dGhlbnRpY2F0aW9uLmNsaWVudC1zZWNyZXQ9ZjdUZlB6RHZ1Z0RERHMxZ0dJMlpNNGtyM2tUUmR1TUIKICB0cGNoOiB8LQogICAgY29ubmVjdG9yLm5hbWU9dHBjaAogICAgdHBjaC5zcGxpdHMtcGVyLW5vZGU9NApjb21tb25MYWJlbHM6IHt9CmNvb3JkaW5hdG9yOgogIGFkZGl0aW9uYWxQcm9wZXJ0aWVzOiAiIgogIGFmZmluaXR5OiB7fQogIGRlcGxveW1lbnRBbm5vdGF0aW9uczoge30KICBlbnZGcm9tOiBbXQogIGV0Y0ZpbGVzOgogICAganZtLmNvbmZpZzogfAogICAgICAtc2VydmVyCiAgICAgIC1YWDotVXNlQmlhc2VkTG9ja2luZwogICAgICAtWFg6K1VzZUcxR0MKICAgICAgLVhYOkcxSGVhcFJlZ2lvblNpemU9MzJNCiAgICAgIC1YWDorRXhwbGljaXRHQ0ludm9rZXNDb25jdXJyZW50CiAgICAgIC1YWDorRXhpdE9uT3V0T2ZNZW1vcnlFcnJvcgogICAgICAtWFg6K0hlYXBEdW1wT25PdXRPZk1lbW9yeUVycm9yCiAgICAgIC1YWDotT21pdFN0YWNrVHJhY2VJbkZhc3RUaHJvdwogICAgICAtWFg6UmVzZXJ2ZWRDb2RlQ2FjaGVTaXplPTUxMk0KICAgICAgLVhYOlBlck1ldGhvZFJlY29tcGlsYXRpb25DdXRvZmY9MTAwMDAKICAgICAgLVhYOlBlckJ5dGVjb2RlUmVjb21waWxhdGlvbkN1dG9mZj0xMDAwMAogICAgICAtRGpkay5uaW8ubWF4Q2FjaGVkQnVmZmVyU2l6ZT0yMDAwMDAwCiAgICAgIC1EamRrLmF0dGFjaC5hbGxvd0F0dGFjaFNlbGY9dHJ1ZQogICAgb3RoZXI6IHt9CiAgICBwcm9wZXJ0aWVzOgogICAgICBjb25maWcucHJvcGVydGllczogfAogICAgICAgIGNvb3JkaW5hdG9yPXRydWUKICAgICAgICBub2RlLXNjaGVkdWxlci5pbmNsdWRlLWNvb3JkaW5hdG9yPWZhbHNlCiAgICAgICAgaHR0cC1zZXJ2ZXIuaHR0cC5wb3J0PTgwODAKICAgICAgICBkaXNjb3ZlcnkudXJpPWh0dHA6Ly9sb2NhbGhvc3Q6ODA4MAogICAgICAgIGRpc2NvdmVyeS1zZXJ2ZXIuZW5hYmxlZD10cnVlCiAgICAgIGxvZy5wcm9wZXJ0aWVzOiB8CiAgICAgICAgIyBFbmFibGUgdmVyYm9zZSBsb2dnaW5nIGZyb20gU3RhcmJ1cnN0IEVudGVycHJpc2UKICAgICAgICAjaW8udHJpbm89REVCVUcKICAgICAgICAjY29tLnN0YXJidXJzdGRhdGEucHJlc3RvPURFQlVHCiAgICAgIG5vZGUucHJvcGVydGllczogfAogICAgICAgIG5vZGUuZW52aXJvbm1lbnQ9c3RhcmJ1cnN0ZW50ZXJwcmlzZXNhbXBsZQogICAgICAgIG5vZGUuZGF0YS1kaXI9L2RhdGEvc3RhcmJ1cnN0CiAgICAgICAgcGx1Z2luLmRpcj0vdXNyL2xpYi9zdGFyYnVyc3QvcGx1Z2luCiAgICAgICAgbm9kZS5zZXJ2ZXItbG9nLWZpbGU9L3Zhci9sb2cvc3RhcmJ1cnN0L3NlcnZlci5sb2cKICAgICAgICBub2RlLmxhdW5jaGVyLWxvZy1maWxlPS92YXIvbG9nL3N0YXJidXJzdC9sYXVuY2hlci5sb2cKICBoZWFwSGVhZHJvb21QZXJjZW50YWdlOiAzMAogIGhlYXBTaXplUGVyY2VudGFnZTogOTAKICBub2RlTWVtb3J5SGVhZHJvb206IDJHaQogIG5vZGVTZWxlY3Rvcjoge30KICBwb2RBbm5vdGF0aW9uczoge30KICByZXNvdXJjZXM6CiAgICBsaW1pdHM6CiAgICAgIGNwdTogNAogICAgbWVtb3J5OiA4R2kKICAgIHJlcXVlc3RzOgogICAgICBjcHU6IDQKICB0b2xlcmF0aW9uczogW10KZXhwb3NlOgogIGNsdXN0ZXJJcDoKICAgIG5hbWU6IHN0YXJidXJzdAogICAgcG9ydHM6CiAgICAgIGh0dHA6CiAgICAgICAgcG9ydDogODA4MAogIGluZ3Jlc3M6CiAgICBhbm5vdGF0aW9uczoge30KICAgIGluZ3Jlc3NOYW1lOiBjb29yZGluYXRvci1pbmdyZXNzCiAgICBwYXRoOiAvCiAgICBzZXJ2aWNlTmFtZTogc3RhcmJ1cnN0CiAgICBzZXJ2aWNlUG9ydDogODA4MAogICAgdGxzOgogICAgICBlbmFibGVkOiB0cnVlCiAgbG9hZEJhbGFuY2VyOgogICAgSVA6ICIiCiAgICBhbm5vdGF0aW9uczoge30KICAgIG5hbWU6IHN0YXJidXJzdAogICAgcG9ydHM6CiAgICAgIGh0dHA6CiAgICAgICAgcG9ydDogODA4MAogICAgc291cmNlUmFuZ2VzOiBbXQogIG5vZGVQb3J0OgogICAgZXh0cmFMYWJlbHM6IHt9CiAgICBuYW1lOiBzdGFyYnVyc3QKICAgIHBvcnRzOgogICAgICBodHRwOgogICAgICAgIG5vZGVQb3J0OiAzMDA4MAogICAgICAgIHBvcnQ6IDgwODAKICB0eXBlOiBjbHVzdGVySXAKZXh0ZXJuYWxTZWNyZXRzOgogIGVuYWJsZWQ6IGZhbHNlCiAgZ29EYWRkeToKICAgIGJhY2tlbmRUeXBlOiBzZWNyZXRzTWFuYWdlcgogIHNlY3JldFByZWZpeDogZXh0ZXJuYWwwCiAgdHlwZTogZ29EYWRkeQpleHRyYUFyZ3VtZW50czogW10KZXh0cmFTZWNyZXQ6IHt9CmltYWdlOgogIHB1bGxQb2xpY3k6IElmTm90UHJlc2VudAogIHJlcG9zaXRvcnk6IHJlZ2lzdHJ5LmNvbm5lY3QucmVkaGF0LmNvbS9zdGFyYnVyc3Qvc3RhcmJ1cnN0LWVudGVycHJpc2UKICB0YWc6IDM2MC1lLjYtdWJpCmluaXRGaWxlOiAiIgppbml0SW1hZ2U6CiAgcHVsbFBvbGljeTogSWZOb3RQcmVzZW50CiAgcmVwb3NpdG9yeTogcmVnaXN0cnkuY29ubmVjdC5yZWRoYXQuY29tL3N0YXJidXJzdC9zdGFyYnVyc3QtZW50ZXJwcmlzZS1pbml0CiAgdGFnOiAzNjAuNi4xLXViaQppbnRlcm5hbDoKICBwb3J0czoKICAgIGh0dHA6CiAgICAgIHBvcnQ6IDgwODAKICAgIGh0dHBzOgogICAgICBwb3J0OiA4NDQzCmludGVybmFsVGxzOiBmYWxzZQpwcm9tZXRoZXVzOgogIGFnZW50OgogICAgY29uZmlnOiAvZXRjL3N0YXJidXJzdC90ZWxlbWV0cnkvcHJvbWV0aGV1cy55YW1sCiAgICBwb3J0OiA4MDgxCiAgICB2ZXJzaW9uOiAwLjE1LjAKICBlbmFibGVkOiB0cnVlCiAgcnVsZXM6CiAgLSBhdHRyTmFtZVNuYWtlQ2FzZTogdHJ1ZQogICAgbmFtZTogJDEKICAgIHBhdHRlcm46IHRyaW5vLmV4ZWN1dGlvbjxuYW1lPVF1ZXJ5TWFuYWdlcj48PihydW5uaW5nX3F1ZXJpZXN8cXVldWVkX3F1ZXJpZXMpCiAgICB0eXBlOiBHQVVHRQogIC0gbmFtZTogZmFpbGVkX3F1ZXJpZXMKICAgIHBhdHRlcm46IHRyaW5vLmV4ZWN1dGlvbjxuYW1lPVF1ZXJ5TWFuYWdlcj48PkZhaWxlZFF1ZXJpZXNcLlRvdGFsQ291bnQKICAgIHR5cGU6IENPVU5URVIKcXVlcnk6CiAgbWF4Q29uY3VycmVudFF1ZXJpZXM6IDMKcmVnaXN0cnlDcmVkZW50aWFsczoKICBlbmFibGVkOiBmYWxzZQogIHJlZ2lzdHJ5OiByZWdpc3RyeS5jb25uZWN0LnJlZGhhdC5jb20Kc2VjdXJpdHlDb250ZXh0OiB7fQpzcGlsbGluZzoKICBlbmFibGVkOiBmYWxzZQogIHZvbHVtZToKICAgIGVtcHR5RGlyOiB7fQpzdGFyYnVyc3QtY2hhcnRzLWNvbW1vbjoKICBnbG9iYWw6IHt9CnN0YXJidXJzdFBsYXRmb3JtTGljZW5zZTogc3RhcmJ1cnN0ZGF0YQp1c2FnZU1ldHJpY3M6CiAgZW5hYmxlZDogdHJ1ZQogIHJlcG9ydGVyOgogICAgY29uZmlnRmlsZXM6CiAgICAgIGNvbmZpZy5qc29uOiAiIgogICAgZW5hYmxlZDogZmFsc2UKICAgIGltYWdlOgogICAgICBwdWxsUG9saWN5OiBJZk5vdFByZXNlbnQKICAgICAgcmVwb3NpdG9yeTogaGFyYm9yLnN0YXJidXJzdGRhdGEubmV0L3Rlc3RpbmcvdXNhZ2UtbWV0cmljcy1yZXBvcnRlcgogICAgICB0YWc6IDAuMS4zLWFscGhhCiAgdXNhZ2VDbGllbnQ6CiAgICBpbml0aWFsRGVsYXk6IDFtCiAgICBpbnRlcnZhbDogMW0KdXNlckRhdGFiYXNlOgogIGVuYWJsZWQ6IGZhbHNlCiAgdXNlcnM6CiAgLSBwYXNzd29yZDogNDY5OTFiMzNmN2E3NWZmNzkyMTNjMGRjMGU2MTA2MTAKICAgIHVzZXJuYW1lOiBhZG1pbgp3b3JrZXI6CiAgYWRkaXRpb25hbFByb3BlcnRpZXM6ICIiCiAgYWZmaW5pdHk6IHt9CiAgYXV0b3NjYWxpbmc6CiAgICBlbmFibGVkOiBmYWxzZQogICAgbWF4UmVwbGljYXM6IDEwMAogICAgbWluUmVwbGljYXM6IDEKICAgIHRhcmdldENQVVV0aWxpemF0aW9uUGVyY2VudGFnZTogODAKICBkZXBsb3ltZW50QW5ub3RhdGlvbnM6IHt9CiAgZGVwbG95bWVudFRlcm1pbmF0aW9uR3JhY2VQZXJpb2RTZWNvbmRzOiAzMDAKICBlbnZGcm9tOiBbXQogIGV0Y0ZpbGVzOgogICAganZtLmNvbmZpZzogfAogICAgICAtc2VydmVyCiAgICAgIC1YWDotVXNlQmlhc2VkTG9ja2luZwogICAgICAtWFg6K1VzZUcxR0MKICAgICAgLVhYOkcxSGVhcFJlZ2lvblNpemU9MzJNCiAgICAgIC1YWDorRXhwbGljaXRHQ0ludm9rZXNDb25jdXJyZW50CiAgICAgIC1YWDorRXhpdE9uT3V0T2ZNZW1vcnlFcnJvcgogICAgICAtWFg6K0hlYXBEdW1wT25PdXRPZk1lbW9yeUVycm9yCiAgICAgIC1YWDotT21pdFN0YWNrVHJhY2VJbkZhc3RUaHJvdwogICAgICAtWFg6UmVzZXJ2ZWRDb2RlQ2FjaGVTaXplPTUxMk0KICAgICAgLVhYOlBlck1ldGhvZFJlY29tcGlsYXRpb25DdXRvZmY9MTAwMDAKICAgICAgLVhYOlBlckJ5dGVjb2RlUmVjb21waWxhdGlvbkN1dG9mZj0xMDAwMAogICAgICAtRGpkay5uaW8ubWF4Q2FjaGVkQnVmZmVyU2l6ZT0yMDAwMDAwCiAgICAgIC1EamRrLmF0dGFjaC5hbGxvd0F0dGFjaFNlbGY9dHJ1ZQogICAgb3RoZXI6IHt9CiAgICBwcm9wZXJ0aWVzOgogICAgICBjb25maWcucHJvcGVydGllczogfAogICAgICAgIGNvb3JkaW5hdG9yPWZhbHNlCiAgICAgICAgaHR0cC1zZXJ2ZXIuaHR0cC5wb3J0PTgwODAKICAgICAgICBkaXNjb3ZlcnkudXJpPWh0dHA6Ly9jb29yZGluYXRvcjo4MDgwCiAgICAgIGxvZy5wcm9wZXJ0aWVzOiB8CiAgICAgICAgIyBFbmFibGUgdmVyYm9zZSBsb2dnaW5nIGZyb20gU3RhcmJ1cnN0IEVudGVycHJpc2UKICAgICAgICAjaW8udHJpbm89REVCVUcKICAgICAgICAjY29tLnN0YXJidXJzdGRhdGEucHJlc3RvPURFQlVHCiAgICAgIG5vZGUucHJvcGVydGllczogfAogICAgICAgIG5vZGUuZW52aXJvbm1lbnQ9c3RhcmJ1cnN0ZW50ZXJwcmlzZXNhbXBsZQogICAgICAgIG5vZGUuZGF0YS1kaXI9L2RhdGEvc3RhcmJ1cnN0CiAgICAgICAgcGx1Z2luLmRpcj0vdXNyL2xpYi9zdGFyYnVyc3QvcGx1Z2luCiAgICAgICAgbm9kZS5zZXJ2ZXItbG9nLWZpbGU9L3Zhci9sb2cvc3RhcmJ1cnN0L3NlcnZlci5sb2cKICAgICAgICBub2RlLmxhdW5jaGVyLWxvZy1maWxlPS92YXIvbG9nL3N0YXJidXJzdC9sYXVuY2hlci5sb2cKICBoZWFwSGVhZHJvb21QZXJjZW50YWdlOiAzMAogIGhlYXBTaXplUGVyY2VudGFnZTogOTAKICBub2RlTWVtb3J5SGVhZHJvb206IDJHaQogIG5vZGVTZWxlY3Rvcjoge30KICBwb2RBbm5vdGF0aW9uczoge30KICByZXBsaWNhczogMgogIHJlc291cmNlczoKICAgIGxpbWl0czoKICAgICAgY3B1OiA0CiAgICBtZW1vcnk6IDhHaQogICAgcmVxdWVzdHM6CiAgICAgIGNwdTogNAogIHN0YXJidXJzdFdvcmtlclNodXRkb3duR3JhY2VQZXJpb2RTZWNvbmRzOiAxMjAKICB0b2xlcmF0aW9uczogW10=
+      ---
+
+      # Source:
+      starburst-enterprise/templates/coordinator/prometheus-configmap.yaml
+
+      #
+      ------------------------------------------------------------------------------
+
+      # Coordinator Prometheus
+
+      #
+      ------------------------------------------------------------------------------
+
+      apiVersion: v1
+
+      kind: ConfigMap
+
+      metadata:
+        name: starburst-coordinator-p8s
+        labels:
+          name: starburst-coordinator-p8s
+      data:
+        prometheus.yaml: |
+          rules:
+            - attrNameSnakeCase: true
+              name: $1
+              pattern: trino.execution<name=QueryManager><>(running_queries|queued_queries)
+              type: GAUGE
+            - name: failed_queries
+              pattern: trino.execution<name=QueryManager><>FailedQueries\.TotalCount
+              type: COUNTER
+      ---
+
+      # Source: starburst-enterprise/templates/workers/prometheus-configmap.yaml
+
+      #
+      ------------------------------------------------------------------------------
+
+      # Workers Prometheus
+
+      #
+      ------------------------------------------------------------------------------
+
+
+      apiVersion: v1
+
+      kind: ConfigMap
+
+      metadata:
+        name: starburst-worker-p8s
+        labels:
+          name: starburst-worker-p8s
+      data:
+        prometheus.yaml: |
+          rules:
+            - attrNameSnakeCase: true
+              name: $1
+              pattern: trino.execution<name=QueryManager><>(running_queries|queued_queries)
+              type: GAUGE
+            - name: failed_queries
+              pattern: trino.execution<name=QueryManager><>FailedQueries\.TotalCount
+              type: COUNTER
+      ---
+
+      # Source:
+      starburst-enterprise/templates/coordinator/prometheus-service.yaml
+
+      apiVersion: v1
+
+      kind: Service
+
+      metadata:
+        name: prometheus-coordinator-starburstenterprise-sample
+        labels:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: prometheus-coordinator
+      spec:
+        selector:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: coordinator
+        ports:
+          - name: metrics
+            protocol: TCP
+            port: 8081
+        type: ClusterIP
+      ---
+
+      # Source: starburst-enterprise/templates/coordinator/service.yaml
+
+      #
+      ------------------------------------------------------------------------------
+
+      # Coordinator Headless Service
+
+      #
+
+      # Used only for internal communication. Required for SAN entries in TLS
+      certs.
+
+      #
+      ------------------------------------------------------------------------------
+
+
+      apiVersion: v1
+
+      kind: Service
+
+      metadata:
+        name: coordinator
+        labels:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: coordinator
+          headless: "true"
+      spec:
+        clusterIP: None
+        type: ClusterIP
+        publishNotReadyAddresses: true
+        ports:
+          - name: http
+            port: 8080
+            protocol: TCP
+          - name: https
+            port: 8443
+            protocol: TCP
+        selector:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: coordinator
+      ---
+
+      # Source: starburst-enterprise/templates/expose/cluster-ip/service.yaml
+
+      apiVersion: v1
+
+      kind: Service
+
+      metadata:
+        name: starburst
+        labels:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: coordinator
+      spec:
+        type: ClusterIP
+        ports:
+          - name: http
+            port: 8080
+            targetPort: 8080
+            protocol: TCP
+        selector:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: coordinator
+      ---
+
+      # Source: starburst-enterprise/templates/workers/prometheus-service.yaml
+
+      apiVersion: v1
+
+      kind: Service
+
+      metadata:
+        name: prometheus-worker-starburstenterprise-sample
+        labels:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: prometheus-worker
+      spec:
+        selector:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: worker
+        ports:
+          - name: metrics
+            protocol: TCP
+            port: 8081
+        type: ClusterIP
+      ---
+
+      # Source: starburst-enterprise/templates/workers/service.yaml
+
+      #
+      ------------------------------------------------------------------------------
+
+      # Worker Headless Service
+
+      #
+
+      # Used only for internal communication. Required for SAN wildcard entries
+      in TLS certs.
+
+      #
+      ------------------------------------------------------------------------------
+
+
+      apiVersion: v1
+
+      kind: Service
+
+      metadata:
+        name: worker
+        labels:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: worker
+          headless: "true"
+      spec:
+        clusterIP: None
+        type: ClusterIP
+        publishNotReadyAddresses: true
+        ports:
+          - name: http
+            port: 8080
+            protocol: TCP
+          - name: https
+            port: 8443
+            protocol: TCP
+        selector:
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+          role: worker
+      ---
+
+      # Source: starburst-enterprise/templates/coordinator/deployment.yaml
+
+      apiVersion: apps/v1
+
+      kind: Deployment
+
+      metadata:
+        name: coordinator
+        labels:
+          role: coordinator
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+      spec:
+        replicas: 1
+        selector:
+          matchLabels:
+            role: coordinator
+            app: starburst-enterprise
+            helm-release: starburstenterprise-sample
+        strategy:
+          type: Recreate
+        template:
+          metadata:
+            labels:
+              role: coordinator
+              app: starburst-enterprise
+              helm-release: starburstenterprise-sample
+              helm-chart: starburst-enterprise-360.6.1
+              managed-by: Helm
+            annotations:
+              
+              checksum/coordinator-values: 52982c95d106b7e6cdac3d2fc9e0e6fee5c9d23ab065eaf7eb52a3fde2438ba0
+              checksum/pullsecret: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
+          spec:
+            # This has to be in sync as we can't kill coordinator earlier that workers.
+            terminationGracePeriodSeconds: 300
+            
+            initContainers:
+              - name: starburst-enterprise-init
+                image: "registry.connect.redhat.com/starburst/starburst-enterprise-init:360.6.1-ubi"
+                imagePullPolicy: IfNotPresent
+                env:
+                  - name: POD_IP
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: status.podIP
+                  - name: POD_NAMESPACE
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.namespace
+                volumeMounts:
+                  - name: starburst-config
+                    mountPath: /work-dir
+                  - name: starburst-config-updated
+                    mountPath: /etc/starburst
+                command:
+                  - starburst-conf-cli
+                  - generate
+                  - --values-yaml
+                  - /work-dir/values.yaml
+                  - --config-type
+                  - COORDINATOR
+                  - --starburst-config-dir
+                  - /etc/starburst
+                  - --ip
+                  - $(POD_IP)
+                  - --k8s-namespace
+                  - $(POD_NAMESPACE)
+            containers:
+              - name: coordinator
+                image: "registry.connect.redhat.com/starburst/starburst-enterprise:360-e.6-ubi"
+                imagePullPolicy: IfNotPresent
+                readinessProbe:
+                  exec:
+                    command:
+                    - /bin/sh
+                    - -c
+                    - curl --max-time 5 -ks http://localhost:8080/v1/info | grep \"starting\":false
+                  initialDelaySeconds: 10
+                  periodSeconds: 5
+                  timeoutSeconds: 30
+                livenessProbe:
+                  exec:
+                    command:
+                    - /bin/sh
+                    - -c
+                    - curl --max-time 5 -ks http://localhost:8080/v1/info | grep \"starting\":false
+                  initialDelaySeconds: 300
+                  periodSeconds: 300
+                  timeoutSeconds: 30
+                  failureThreshold: 1
+                envFrom:
+                  
+                  
+                env:
+                  - name: POD_ID
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.uid
+                  - name: POD_IP
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: status.podIP
+                  - name: POD_NAMESPACE
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.namespace
+                ports:
+                  - containerPort: 8080
+                  - containerPort: 8443
+                volumeMounts:
+                  - name: starburst-config-updated
+                    mountPath: /etc/starburst
+                  
+                  
+                  - name: prometheus-volume
+                    mountPath: /etc/starburst/telemetry
+                  
+                resources:
+                  requests:
+                    memory: 8Gi
+                    cpu: 4
+                  limits:
+                    memory: 8Gi
+                    cpu: 4
+                terminationMessagePolicy: FallbackToLogsOnError
+              - name: usage-client
+                image: "registry.connect.redhat.com/starburst/starburst-enterprise:360-e.6-ubi"
+                imagePullPolicy: IfNotPresent
+                command: ["java"]
+                args:
+                  - "-Dusage-client.coordinator-uri=http://localhost:8080"
+                  - "-Dusage-client.initial-delay=1m"
+                  - "-Dusage-client.interval=1m"
+                  - "-jar"
+                  - "/usr/local/bin/starburst-usage-client.jar"
+                terminationMessagePolicy: FallbackToLogsOnError
+            volumes:
+              - name: starburst-config
+                projected:
+                  sources:
+                    - secret:
+                        name: values-yaml-secret
+                    - secret:
+                        name: starburstdata
+              - name: starburst-config-updated
+                emptyDir: {}
+              
+              
+              - name: prometheus-volume
+                configMap:
+                  name: starburst-coordinator-p8s
+      ---
+
+      # Source: starburst-enterprise/templates/workers/deployment.yaml
+
+      apiVersion: apps/v1
+
+      kind: Deployment
+
+      metadata:
+        name: worker
+        labels:
+          role: worker
+          app: starburst-enterprise
+          helm-release: starburstenterprise-sample
+          helm-chart: starburst-enterprise-360.6.1
+          managed-by: Helm
+      spec:
+        replicas: 2
+        selector:
+          matchLabels:
+            role: worker
+            app: starburst-enterprise
+            helm-release: starburstenterprise-sample
+        strategy:
+          type: Recreate
+        template:
+          metadata:
+            labels:
+              role: worker
+              app: starburst-enterprise
+              helm-release: starburstenterprise-sample
+              helm-chart: starburst-enterprise-360.6.1
+              managed-by: Helm
+            annotations:
+              
+              checksum/worker-values: 91f113fabab9c1767639b314c5667b16edbb940076486bd18adc2fedc4343f59
+              checksum/pullsecret: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
+          spec:
+            terminationGracePeriodSeconds: 300
+            
+            initContainers:
+              - name: starburst-enterprise-init
+                image: "registry.connect.redhat.com/starburst/starburst-enterprise-init:360.6.1-ubi"
+                imagePullPolicy: IfNotPresent
+                env:
+                  - name: POD_IP
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: status.podIP
+                  - name: POD_NAMESPACE
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.namespace
+                volumeMounts:
+                  - name: starburst-config
+                    mountPath: /work-dir
+                  - name: starburst-config-updated
+                    mountPath: /etc/starburst
+                command:
+                  - starburst-conf-cli
+                  - generate
+                  - --values-yaml
+                  - /work-dir/values.yaml
+                  - --config-type
+                  - WORKER
+                  - --starburst-config-dir
+                  - /etc/starburst
+                  - --ip
+                  - $(POD_IP)
+                  - --k8s-namespace
+                  - $(POD_NAMESPACE)
+            containers:
+              - name: worker
+                image: "registry.connect.redhat.com/starburst/starburst-enterprise:360-e.6-ubi"
+                imagePullPolicy: IfNotPresent
+                readinessProbe:
+                  exec:
+                    command:
+                    - /bin/sh
+                    - -c
+                    - curl --max-time 5 -ks http://localhost:8080/v1/info | grep \"starting\":false
+                  initialDelaySeconds: 10
+                  periodSeconds: 5
+                  timeoutSeconds: 30
+                livenessProbe:
+                  exec:
+                    command:
+                    - /bin/sh
+                    - -c
+                    - curl --max-time 5 -ks http://localhost:8080/v1/info | grep \"starting\":false
+                  initialDelaySeconds: 300
+                  periodSeconds: 300
+                  timeoutSeconds: 30
+                  failureThreshold: 1
+                envFrom:
+                  
+                  
+                env:
+                  - name: POD_ID
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.uid
+                  - name: POD_IP
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: status.podIP
+                  - name: POD_NAMESPACE
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.namespace
+                ports:
+                  - containerPort: 8080
+                  - containerPort: 8443
+                volumeMounts:
+                  - name: starburst-config-updated
+                    mountPath: /etc/starburst
+                  
+                  
+                  - name: prometheus-volume
+                    mountPath: /etc/starburst/telemetry
+                  
+                resources:
+                  requests:
+                    memory: 8Gi
+                    cpu: 4
+                  limits:
+                    memory: 8Gi
+                    cpu: 4
+                terminationMessagePolicy: FallbackToLogsOnError
+            volumes:
+              - name: starburst-config
+                projected:
+                  sources:
+                  - secret:
+                      name: values-yaml-secret
+                  - secret:
+                      name: starburstdata
+              - name: starburst-config-updated
+                emptyDir: {}
+              
+              
+              - name: prometheus-volume
+                configMap:
+                  name: starburst-worker-p8s
+    name: starburstenterprise-sample
